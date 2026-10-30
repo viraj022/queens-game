@@ -24,7 +24,7 @@ class QueensViewModel : ViewModel() {
     private var runningSinceWallMs: Long? = null
 
     private val _uiState = MutableStateFlow(
-        GameUiState(board = PuzzleGenerator.sample6x6(), boardSize = 6)
+        GameUiState(board = PuzzleGenerator.sample6x6())
     )
     val uiState: StateFlow<GameUiState> = _uiState.asStateFlow()
 
@@ -62,14 +62,16 @@ class QueensViewModel : ViewModel() {
         }
     }
 
-    fun newGame(size: Int = _uiState.value.boardSize) {
+    fun newGame(size: Int = _uiState.value.board.size) {
         val clamped = size.coerceIn(6, 8)
         history.clear()
         startedAtElapsed = 0L
         val board = PuzzleGenerator.generate(clamped, Random.Default)
+        require(board.size == clamped) {
+            "Generator returned ${board.size}x${board.size}, expected ${clamped}x${clamped}"
+        }
         _uiState.value = GameUiState(
             board = board,
-            boardSize = clamped,
             autoXEnabled = _uiState.value.autoXEnabled,
             elapsedMillis = 0L
         )

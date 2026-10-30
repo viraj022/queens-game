@@ -154,7 +154,7 @@ fun QueensGameScreen(
         ) {
             listOf(6, 7, 8).forEach { size ->
                 FilterChip(
-                    selected = state.boardSize == size,
+                    selected = state.board.size == size,
                     onClick = { onSizeSelected(size) },
                     label = { Text("${size}×$size") },
                     colors = FilterChipDefaults.filterChipColors(

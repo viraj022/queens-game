@@ -46,7 +46,9 @@ data class GameUiState(
     val isSolved: Boolean = false,
     val elapsedMillis: Long = 0L,
     val autoXEnabled: Boolean = true,
-    val boardSize: Int = board.size,
     val canUndo: Boolean = false,
     val moveCount: Int = 0
-)
+) {
+    /** Always mirrors the board currently on screen — use for size chips. */
+    val boardSize: Int get() = board.size
+}
