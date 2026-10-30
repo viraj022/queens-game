@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.viraj022.queens.generator.PuzzleGeneratorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-30T14:38:37.253Z" hostname="DESKTOP-0L92UT0" time="0.025">
+  <properties/>
+  <testcase name="sample6x6_hasSixRegionsAndIsSolvable" classname="com.viraj022.queens.generator.PuzzleGeneratorTest" time="0.001"/>
+  <testcase name="generate_size6_producesSolvableBoard" classname="com.viraj022.queens.generator.PuzzleGeneratorTest" time="0.011"/>
+  <testcase name="generate_size7_and8_areSolvable" classname="com.viraj022.queens.generator.PuzzleGeneratorTest" time="0.009"/>
+  <testcase name="generate_regionsAreContiguousCountsMatchSize" classname="com.viraj022.queens.generator.PuzzleGeneratorTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

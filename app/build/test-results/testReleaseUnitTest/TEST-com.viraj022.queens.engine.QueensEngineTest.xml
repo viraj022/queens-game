@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.viraj022.queens.engine.QueensEngineTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-30T14:38:37.165Z" hostname="DESKTOP-0L92UT0" time="0.083">
+  <properties/>
+  <testcase name="validateBoard_flagsAdjacentDiagonalQueens" classname="com.viraj022.queens.engine.QueensEngineTest" time="0.051"/>
+  <testcase name="applyAutoX_marksRowColumnAndNeighbors" classname="com.viraj022.queens.engine.QueensEngineTest" time="0.007"/>
+  <testcase name="toggleCell_cyclesEmptyToXToQueenToEmpty" classname="com.viraj022.queens.engine.QueensEngineTest" time="0.001"/>
+  <testcase name="isSolved_trueForKnownSampleSolution" classname="com.viraj022.queens.engine.QueensEngineTest" time="0.022"/>
+  <testcase name="isSolved_falseWhenMissingQueens" classname="com.viraj022.queens.engine.QueensEngineTest" time="0.001"/>
+  <testcase name="validateBoard_flagsSameRowQueens" classname="com.viraj022.queens.engine.QueensEngineTest" time="0.0"/>
+  <testcase name="applyAutoX_skipsConflictingQueen" classname="com.viraj022.queens.engine.QueensEngineTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
